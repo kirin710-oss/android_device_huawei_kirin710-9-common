@@ -415,10 +415,10 @@ vendor/lib64/libc_sec.so
 vendor/etc/init/vendor.huawei.hardware.dolby.dms@1.0-service.rc
 
 # DRM (L1 et L3)
-preavs/bin/hw/android.hardware.drm@1.1-service.widevine:vendor/bin/hw/android.hardware.drm@1.1-service.widevine
+vendor/preavs/bin/hw/android.hardware.drm@1.1-service.widevine:vendor/bin/hw/android.hardware.drm@1.1-service.widevine
 vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
-preavs/oemcrypto/liboemcrypto.so:vendor/lib/liboemcrypto.so
-preavs/lib/libwvhidl.so:vendor/lib/libwvhidl.so
+vendor/preavs/oemcrypto/liboemcrypto.so:vendor/lib/liboemcrypto.so
+vendor/preavs/lib/libwvhidl.so:vendor/lib/libwvhidl.so
 
 # HWComposer - patched to nop some functions
 # (checkPartialUpdate, SetPartialUpdates, CalcLayerMaskRects, CalcComposeRect, CheckRotCapability) to fix HWC itself, random crashes, etc.
@@ -653,6 +653,3 @@ vendor/lib64/libthplog.so
 vendor/lib64/libthpinterface.so
 vendor/lib64/libtsa.so
 vendor/lib64/libmmpa.so
-
-
-

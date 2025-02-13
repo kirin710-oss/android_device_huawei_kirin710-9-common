@@ -67,7 +67,7 @@ function blob_fixup() {
             sed -i 's/\"SkinWhiten/\" SkinWhiten/g' "${2}"
             ;;
         vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc)
-            sed -i 's/preavs/vendor/g' "${2}"
+            sed -i 's/preavs//g' "${2}"
             ;;
         vendor/etc/init/android.hardware.secure_element@1.0-service.hisi.rc)
             sed -i 's/1.0-service/1.0-service.hisi/g' "${2}"
